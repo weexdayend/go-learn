@@ -8,11 +8,6 @@ blocks:
   - name: Test
     task:
       jobs:
-        - name: Download Module
+        - name: TEST
           commands:
-            - sem-version go 1.13
-            - export GO111MODULE=on
-            - export GOPATH=~/go
-            - 'export PATH=/home/semaphore/go/bin:$PATH'
-            - checkout
-            - go mod vendor
+            - go test ./...
