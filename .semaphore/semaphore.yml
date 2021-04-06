@@ -8,7 +8,7 @@ blocks:
   - name: Test
     task:
       jobs:
-        - name: sem start mysql
+        - name: sem-service start mysql
           commands:
             - sem-version go 1.11
             - export GO111MODULE=on
